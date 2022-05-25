@@ -1,6 +1,6 @@
 appName: actions-runner
 
-runnerImage: quay.io/aagreen/buildah-runner
+runnerImage: quay.io/ploigos/github-runner
 runnerTag: latest
 
 # GitHub organization or user. Required.
