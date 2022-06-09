@@ -1,3 +1,12 @@
+# Purpose of this Fork
+
+This repo has been forked from [redhat-actions/openshift-actions-runner-chart](https://github.com/redhat-actions/openshift-actions-runner-chart) for a few reasons that are listed below. For a detailed technical look, please view a comparison [here](https://github.com/redhat-actions/openshift-actions-runner-chart/compare/main...ploigos:main).
+
+1. Use our own customized image.
+2. Add a service account to the deployment.
+3. Create a custom secret to be mounted inside of the pod that houses secret values that were needed for our use case.
+4. Make the runners ephemeral by default.
+
 # OpenShift GitHub Actions Runner Chart 
 
 [![Helm Lint](https://github.com/redhat-actions/openshift-actions-runner-chart/workflows/Helm%20Lint/badge.svg)](https://github.com/redhat-actions/openshift-actions-runner-chart/actions)
