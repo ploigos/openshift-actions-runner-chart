@@ -1,4 +1,4 @@
-# Purpose of this Repository
+# Purpose of this Fork
 
 This repo has been forked from [redhat-actions/openshift-actions-runner-chart](https://github.com/redhat-actions/openshift-actions-runner-chart) for a few reasons that are listed below. For a detailed technical look, please view a comparison [here](https://github.com/redhat-actions/openshift-actions-runner-chart/compare/main...ploigos:main).
 
