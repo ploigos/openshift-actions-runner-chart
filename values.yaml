@@ -124,6 +124,23 @@ vault:
   github:
     key: secret/github
     property: pat
-  psr:
-    key: secret/psr
-    property: psr-secrets
+  registry0:
+    host:
+      key: secret/registry0
+      property: host
+    user:
+      key: secret/registry0
+      property: user
+    password:
+      key: secret/registry0
+      property: password
+  registry1:
+    host:
+      key: secret/registry1
+      property: host
+    user:
+      key: secret/registry1
+      property: user
+    password:
+      key: secret/registry1
+      property: password
