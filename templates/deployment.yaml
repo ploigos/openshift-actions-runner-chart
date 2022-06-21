@@ -52,9 +52,11 @@ spec:
                 path: tls-ca-bundle.pem
         {{- end }}
 
-        - name: generated-psr
+        {{- if .Values.psrSecrets.enabled }}
+        - name: {{ .Values.psrSecrets.secretName }}
           secret:
-            secretName: generated-psr
+            secretName: {{ .Values.psrSecrets.secretName }}
+        {{- end }}
 
       containers:
         - name: {{ .Release.Name }}
@@ -148,6 +150,8 @@ spec:
               readOnly: true
             {{- end }}
 
-            - name: generated-psr
-              mountPath: /ploigos
+            {{- if .Values.psrSecrets.enabled }}
+            - name: {{ .Values.psrSecrets.secretName }}
+              mountPath: /ploigos/
               readOnly: true
+            {{- end }}

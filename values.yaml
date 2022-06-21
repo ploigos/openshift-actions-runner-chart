@@ -103,10 +103,16 @@ runnerEnv:
     # - name: no_proxy
     #   value: localhost
 
-containerRegistry:
-  host: ""
-  user: ""
-  password: ""
+
+psrSecrets:
+  enabled: "true"
+  secretName: "psr-secrets"
+  secretKey: "psr-secrets"
+
+#containerRegistry:
+#  host: ""
+#  user: ""
+#  password: ""
 
 # Vault values
 
@@ -118,3 +124,6 @@ vault:
   github:
     key: secret/github
     property: pat
+  psr:
+    key: secret/psr
+    property: psr-secrets
