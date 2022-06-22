@@ -118,6 +118,7 @@ psrSecrets:
 
 # Vault storage backend
 vaultStorage: "vault-backend"
+vaultSecret: "vault-secret"
 
 # Vault Keys
 vault:
