@@ -146,3 +146,14 @@ vault:
     password:
       key: secret/registry1
       property: password
+  argocd:
+    password:
+      key: secret/argocd
+      property: password
+  git:
+    username:
+      key: secret/git
+      property: username
+    password:
+      key: secret/git
+      property: password
