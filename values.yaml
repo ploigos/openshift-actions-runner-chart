@@ -150,6 +150,9 @@ vault:
     password:
       key: secret/argocd
       property: password
+    username:
+      key: secret/argocd
+      property: username
   git:
     username:
       key: secret/git
