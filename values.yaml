@@ -146,6 +146,16 @@ vault:
     password:
       key: secret/registry1
       property: password
+  registry2:
+    host:
+      key: secret/registry2
+      property: host
+    user:
+      key: secret/registry2
+      property: user
+    password:
+      key: secret/registry2
+      property: password
   argocd:
     password:
       key: secret/argocd
