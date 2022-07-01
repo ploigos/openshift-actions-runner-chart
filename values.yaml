@@ -1,6 +1,6 @@
 appName: actions-runner
 
-runnerImage: quay.io/ploigos/ploigos-github-runner
+runnerImage: ploigos2.jfrog.io/ploigos/ploigos-github-runner
 runnerTag: latest
 
 # GitHub organization or user. Required.
