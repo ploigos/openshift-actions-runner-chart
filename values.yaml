@@ -1,7 +1,7 @@
 appName: actions-runner
 
 runnerImage: ploigos2.jfrog.io/ploigos/ploigos-github-runner
-runnerTag: latest
+runnerTag: noanyuid
 
 # GitHub organization or user. Required.
 # If githubRepository is set, this must be the organization or user who owns that repository.
