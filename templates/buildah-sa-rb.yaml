@@ -4,7 +4,7 @@ metadata:
   name: system:openshift:scc:anyuid
 roleRef:
   apiGroup: rbac.authorization.k8s.io
-  kind: Role
+  kind: ClusterRole
   name: nonrootbuilder
 subjects:
   - kind: ServiceAccount
