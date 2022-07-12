@@ -26,7 +26,7 @@ spec:
         # DO NOT edit the instance label, it is used by the runner installer action to find the installed pod.
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
-      #serviceAccountName: {{ .Values.serviceAccountName }}
+      serviceAccountName: {{ .Values.serviceAccountName }}
       {{- if .Values.pullSecret.enabled }}
       imagePullSecrets:
         - name: {{ .Values.pullSecret.secretName }}
