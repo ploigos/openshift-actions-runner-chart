@@ -103,6 +103,10 @@ runnerEnv:
     # - name: no_proxy
     #   value: localhost
 
+pullSecret:
+  enabled: "true"
+  secretName: "pull-secret"
+  secretKey: ".dockerconfigjson"
 
 psrSecrets:
   enabled: "true"
