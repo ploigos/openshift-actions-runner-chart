@@ -7,5 +7,5 @@ roleRef:
   kind: ClusterRole
   name: system:openshift:scc:nonrootbuilder
 subjects:
-  - kind: ServiceAccount
-    name: {{ .Values.serviceAccountName }}
+- kind: ServiceAccount
+  name: {{ .Values.serviceAccountName }}
