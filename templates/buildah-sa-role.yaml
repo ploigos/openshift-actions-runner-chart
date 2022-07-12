@@ -1,3 +1,7 @@
+allowHostDirVolumePlugin: false
+allowHostIPC: false
+allowHostNetwork: false
+allowHostPID: false
 allowHostPorts: false
 allowPrivilegeEscalation: true
 allowPrivilegedContainer: false
@@ -20,8 +24,7 @@ requiredDropCapabilities:
   - KILL
   - MKNOD
 runAsUser:
-  type: MustRunAs
-  Uid: 1001
+  type: MustRunAsNonRoot
 seLinuxContext:
   type: MustRunAs
 supplementalGroups:
