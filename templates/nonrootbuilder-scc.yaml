@@ -29,8 +29,7 @@ seLinuxContext:
   type: MustRunAs
 supplementalGroups:
   type: RunAsAny
-users:
-  - system:serviceaccount:{{ .Release.Name }}:{{ .Values.serviceAccountName }}
+users: []
 volumes:
   - configMap
   - downwardAPI
