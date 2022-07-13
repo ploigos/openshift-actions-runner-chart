@@ -24,7 +24,7 @@ requiredDropCapabilities:
   - KILL
   - MKNOD
 runAsUser:
-  type: MustRunAsRange
+  type: MustRunAsNonRoot
 seLinuxContext:
   type: MustRunAs
 supplementalGroups:
