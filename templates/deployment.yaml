@@ -27,6 +27,10 @@ spec:
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
       serviceAccountName: {{ .Values.serviceAccountName }}
+      {{- if .Values.pullSecret.enabled }}
+      imagePullSecrets:
+        - name: {{ .Values.pullSecret.secretName }}
+      {{- end}}
       securityContext:
         runAsNonRoot: true
 
