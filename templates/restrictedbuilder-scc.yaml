@@ -9,22 +9,22 @@ allowedCapabilities: null
 apiVersion: security.openshift.io/v1
 defaultAddCapabilities: null
 fsGroup:
-  type: RunAsAny
+  type: MustRunAs
 groups: []
 kind: SecurityContextConstraints
 metadata:
   annotations:
-    kubernetes.io/description: nonroot-builder provides all features of the nonroot
-      SCC but allows users to run with any non-root UID and multiple namespaces for
-      nonroot building of images with podman and buildah
-  name: nonrootbuilder
+    kubernetes.io/description: restricted-builder provides all features of the restricted
+      SCC but allows users to use the SETUID and SETGID capabilities for building of
+      images with podman and buildah
+  name: restrictedbuilder
 priority: 5
 readOnlyRootFilesystem: false
 requiredDropCapabilities:
   - KILL
   - MKNOD
 runAsUser:
-  type: MustRunAsNonRoot
+  type: MustRunAsRange
 seLinuxContext:
   type: MustRunAs
 supplementalGroups:
