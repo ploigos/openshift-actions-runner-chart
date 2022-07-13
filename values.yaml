@@ -1,7 +1,7 @@
 appName: actions-runner
 
 runnerImage: ploigos2.jfrog.io/ploigos/ploigos-github-runner
-runnerTag: noanyuid
+runnerTag: latest
 
 # GitHub organization or user. Required.
 # If githubRepository is set, this must be the organization or user who owns that repository.
@@ -45,7 +45,7 @@ githubAppPem: ""
 
 # Pass labels using array syntax, which is curly braces surrounding comma-separated items.
 # --set runnerLabels="{ label1, label2 }" results in the labels "label1" and "label2".
-runnerLabels: [noanyuid]
+runnerLabels: [python]
 
 # The name of an organization runner group name to attach the runner to
 runnerGroup: ""
