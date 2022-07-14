@@ -17,7 +17,7 @@ metadata:
     kubernetes.io/description: nonrootbuilder provides all features of the nonroot
       SCC but allows users to use the SETUID and SETGID capabilities for nonroot
       building of images with podman and buildah
-  name: nonrootbuilder
+  name: nonrootbuilderdocker
 priority: 5
 readOnlyRootFilesystem: false
 requiredDropCapabilities:
