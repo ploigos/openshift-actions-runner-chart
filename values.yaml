@@ -175,3 +175,7 @@ vault:
     password:
       key: secret/git
       property: password
+  podmansign:
+    privatekey:
+      key: sign-container-image-private-key
+      property: private-key
