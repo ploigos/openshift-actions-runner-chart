@@ -178,4 +178,4 @@ vault:
   podmansign:
     privatekey:
       key: secret/podmansign
-      property: private-key
+      property: sign-container-image-private-key
