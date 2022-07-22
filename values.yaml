@@ -177,5 +177,5 @@ vault:
       property: password
   podmansign:
     privatekey:
-      key: sign-container-image-private-key
+      key: secret/sign-container-image-private-key
       property: private-key
