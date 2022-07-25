@@ -162,6 +162,7 @@ vault:
       key: secret/registry2
       property: password
   mvn:
+    serverName: maven-releases
     host:
       key: secret/mvn
       property: host
