@@ -161,6 +161,19 @@ vault:
     password:
       key: secret/registry2
       property: password
+  mvn:
+    host:
+      key: secret/mvn
+      property: host
+    id:
+      key: secret/mvn
+      property: id
+    user:
+      key: secret/mvn
+      property: user
+    password:
+      key: secret/mvn
+      property: password
   argocd:
     password:
       key: secret/argocd
