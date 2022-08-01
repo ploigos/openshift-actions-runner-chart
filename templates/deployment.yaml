@@ -92,7 +92,7 @@ spec:
             {{- end }}
 
             # App Auth
-            {{- if .Values.githubAppId }}
+            {{- if .Values.githubApp }}
             - name: GITHUB_APP_ID
               valueFrom:
                 secretKeyRef:
