@@ -20,8 +20,8 @@ secretName: "github-pat"
 # The name of the key that points to the data within the secret.
 # Modify this to store multiple PATs in one secret.
 secretKey: "github-pat"
-# Set to true if using a Github personal access token (PAT).
-githubPat: "true"
+# Set to true if using a Github personal access token (PAT) to authenticate. Comment out if using Github App Auth
+#githubPat: "true"
 
 ### End PAT Auth
 
@@ -36,6 +36,8 @@ appIdSecretKey: "github-app-id"
 appInstallIdSecretKey: "github-install-id"
 # The name of the key that points to the Github App PEM
 appPemSecretKey: "github-pem"
+# Set to true if using Github App Auth to authenticate. Comment out if using a Github personal access token (PAT)
+githubApp: "true"
 ## All 3 githubApp values are required
 githubAppId: ""
 githubAppInstallId: ""
@@ -131,6 +133,16 @@ vault:
   github:
     key: secret/github
     property: pat
+  githubapp:
+    id:
+      key: secret/githubapp
+      property: id
+    installid:
+      key: secret/githubapp
+      property: installid
+    pem:
+      key: secret/githubapp
+      property: pem
   registry0:
     host:
       key: secret/registry0
