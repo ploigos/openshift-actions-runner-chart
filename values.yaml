@@ -186,6 +186,20 @@ vault:
     password:
       key: secret/mvn
       property: password
+    # This would be better as a list
+    mirror: 
+      host:
+        key: secret/mvn
+        property: host
+      id:
+        key: secret/mvn
+        property: id
+      user:
+        key: secret/mvn
+        property: user
+      password:
+        key: secret/mvn
+        property: password
   argocd:
     password:
       key: secret/argocd
