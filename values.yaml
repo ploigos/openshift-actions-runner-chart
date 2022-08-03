@@ -187,7 +187,7 @@ vault:
       key: secret/mvn
       property: password
     # This would be better as a list
-  mvn-mirror: 
+  mvnMirror: 
     host:
       key: secret/mvn-mirror
       property: host
