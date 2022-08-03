@@ -189,16 +189,16 @@ vault:
     # This would be better as a list
   mvnMirror: 
     host:
-      key: secret/mvn-mirror
+      key: secret/mvnMirror
       property: host
     id:
-      key: secret/mvn-mirror
+      key: secret/mvnMirror
       property: id
     user:
-      key: secret/mvn-mirror
+      key: secret/mvnMirror
       property: user
     password:
-      key: secret/mvn-mirror
+      key: secret/mvnMirror
       property: password
   argocd:
     password:
