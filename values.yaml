@@ -47,7 +47,7 @@ githubAppPem: ""
 
 # Pass labels using array syntax, which is curly braces surrounding comma-separated items.
 # --set runnerLabels="{ label1, label2 }" results in the labels "label1" and "label2".
-runnerLabels: [python]
+runnerLabels: [python,dependency]
 
 # The name of an organization runner group name to attach the runner to
 runnerGroup: ""
