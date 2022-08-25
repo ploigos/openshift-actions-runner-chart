@@ -83,7 +83,7 @@ serviceAccountName: buildah-sa
 # Adjust requests and limits depending on your resources,
 # and how heavyweight your workloads are.
 memoryRequest: "512Mi"
-memoryLimit: "1Gi"
+memoryLimit: "2Gi"
 cpuRequest: "100m"
 cpuLimit: "250m"
 
