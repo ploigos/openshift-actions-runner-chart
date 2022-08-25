@@ -1,7 +1,7 @@
 appName: actions-runner
 
-runnerImage: quay.io/ploigos/ploigos-github-runner
-runnerTag: feature-openscap
+runnerImage: nexus-docker-devsecops.apps.cluster-q7vt2.q7vt2.sandbox1639.opentlc.com/ploigos/ploigos-github-runner
+runnerTag: latest
 
 # GitHub organization or user. Required.
 # If githubRepository is set, this must be the organization or user who owns that repository.
@@ -47,7 +47,7 @@ githubAppPem: ""
 
 # Pass labels using array syntax, which is curly braces surrounding comma-separated items.
 # --set runnerLabels="{ label1, label2 }" results in the labels "label1" and "label2".
-runnerLabels: [openscap]
+runnerLabels: [python]
 
 # The name of an organization runner group name to attach the runner to
 runnerGroup: ""
