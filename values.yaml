@@ -1,7 +1,7 @@
 appName: actions-runner
 
 runnerImage: quay.io/ploigos/ploigos-github-runner
-runnerTag: feature/dotnet
+runnerTag: feature-dotnet
 
 # GitHub organization or user. Required.
 # If githubRepository is set, this must be the organization or user who owns that repository.
