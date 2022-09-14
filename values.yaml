@@ -1,6 +1,6 @@
 appName: actions-runner
 
-runnerImage: nexus-docker-devsecops.apps.cluster-2k8k6.2k8k6.sandbox70.opentlc.com/ploigos/ploigos-github-runner
+runnerImage: nexus-docker-devsecops.apps.cluster-pn8ld.pn8ld.sandbox814.opentlc.com/ploigos/ploigos-github-runner
 runnerTag: latest
 
 # GitHub organization or user. Required.
