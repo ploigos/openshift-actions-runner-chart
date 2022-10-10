@@ -125,6 +125,7 @@ psrSecrets:
 
 # Vault storage backend
 vaultStorage: "vault-backend"
+vaultServiceAccount: "vault-k8s"
 vaultSecret: "vault-secret"
 vaultKey: "token"
 
